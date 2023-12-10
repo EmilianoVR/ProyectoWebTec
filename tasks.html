@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+</head>
+<body>
+    <h1>Tareas</h1>
+    <form action="/tasks" method="post">
+        <label for="taskId">ID de tarea:</label>
+        <input type="text" id="taskId" name="taskId" required>
+        <br>
+        <label for="title">Titulo:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
+        <label for="description">Descripción:</label>
+        <textarea id="description" name="description" required></textarea>
+        <br>
+        
+        <button type="submit">Añadir Tarea</button>
+    </form>
+    
+    
+    <table>
+      
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Titulo</th>
+               
+            </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+    </table>
+
+ 
+    <label for="statusFilter">Filtrar por Estatus:</label>
+    <select id="statusFilter">
+        <option value="all">Todas</option>
+        <option value="todo">Pendientes</option>
+    
+    </select>
+    <button onclick="filterTasks()">Aplicar filtro</button>
+
+   
+    <div id="taskDetails">
+       
+    </div>
+
+  
+    <script>
+        function filterTasks() {
+           
+        }
+    </script>
+</body>
+</html>
